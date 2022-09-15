@@ -1,0 +1,16 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user
+    password: password
+
+hsql:
+  url: jdbc:hsqldb:hsql://localhost/db1
+
+server:
+  port: 8081
+
+runner:
+  duration: 3600000
+

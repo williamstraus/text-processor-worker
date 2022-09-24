@@ -18,6 +18,8 @@ public class DBConfig {
         DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setDriverClassName("org.hsqldb.jdbcDriver");
         ds.setUrl(env.getProperty("hsql.url"));
+        ds.setUsername(env.getProperty("hsql.username"));
+        ds.setPassword(env.getProperty("hsql.password"));
 
         return ds;
     }

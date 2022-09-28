@@ -4,6 +4,8 @@ spring:
     port: 5672
     username: guest
     password: guest
+  flyway:
+    baseline-on-migrate: true
 
 hsql:
   url: jdbc:hsqldb:hsql://hsqldb:9001/db1
